@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect</title>
+  <script type="text/javascript">
+    window.onload = function() {
+      const redirectUrl = "io.supabase.flutterquickstart://login-callback/";
+      const params = new URLSearchParams(window.location.search);
+      window.location.href = redirectUrl + "?" + params.toString();
+    }
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
